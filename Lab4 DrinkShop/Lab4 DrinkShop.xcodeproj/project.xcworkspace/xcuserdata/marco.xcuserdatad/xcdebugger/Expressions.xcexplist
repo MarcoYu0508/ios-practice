@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "homeViewController.viewWillAppear(_:):homeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "myDrink">
+            </PersistentString>
+            <PersistentString
+               value = "String(format: &quot;&#x60a8;&#x7684;&#x98f2;&#x6599;&#xff1a;%@\n&#x751c;&#x5ea6;&#x70ba;&#xff1a;%@\n&#x51b0;&#x91cf;&#x70ba;&#xff1a;%@\n&#x552e;&#x50f9;&#x70ba;&#xff1a;%d&quot;, myDrink.name, myDrink.sweetness, myDrink.ice, myDrink.price)">
+            </PersistentString>
+            <PersistentString
+               value = "showOrderLabel.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

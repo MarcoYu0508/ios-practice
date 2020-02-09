@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E28-ow-FKN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="3Mu-fn-AGl">
+            <objects>
+                <navigationController id="E28-ow-FKN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HCN-SL-yzI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KYu-nr-QSi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BmP-ZV-w5c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-983" y="139"/>
+        </scene>
+        <!--點餐首頁-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="homeViewController" customModule="Lab4_DrinkShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21h-JU-gtF">
+                                <rect key="frame" x="176" y="103" width="62" height="30"/>
+                                <state key="normal" title="開始點餐"/>
+                                <connections>
+                                    <segue destination="lYa-PV-MN4" kind="show" identifier="orderSegue" id="tSz-rA-JKk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="show Order Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ap-Qp-hL3">
+                                <rect key="frame" x="20" y="153" width="135" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6ap-Qp-hL3" secondAttribute="trailing" symbolic="YES" id="FEj-mx-lCG"/>
+                            <constraint firstItem="21h-JU-gtF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HCl-Xd-vqC"/>
+                            <constraint firstItem="6ap-Qp-hL3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OiI-mZ-Ivl"/>
+                            <constraint firstItem="21h-JU-gtF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="hE7-38-6bL"/>
+                            <constraint firstItem="6ap-Qp-hL3" firstAttribute="top" secondItem="21h-JU-gtF" secondAttribute="bottom" constant="20" id="w1O-H6-vYz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="點餐首頁" id="Hm4-gs-Qap">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="CZt-zX-8TA"/>
+                        <barButtonItem key="rightBarButtonItem" title="完成" id="h6X-yp-J6R">
+                            <connections>
+                                <action selector="completeBtnClick:" destination="BYZ-38-t0r" id="He6-UP-FG9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="completeBtn" destination="h6X-yp-J6R" id="3Rt-vj-54W"/>
+                        <outlet property="showOrderLabel" destination="6ap-Qp-hL3" id="qcz-4X-Gst"/>
+                        <outlet property="startBtn" destination="21h-JU-gtF" id="RaS-Cw-Eau"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="138.61607142857142"/>
+        </scene>
+        <!--Order View Controller-->
+        <scene sceneID="g0V-GK-cHA">
+            <objects>
+                <viewController id="lYa-PV-MN4" customClass="orderViewController" customModule="Lab4_DrinkShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kav-63-xCC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="飲料" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jya-17-otF">
+                                <rect key="frame" x="20" y="103" width="35" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入飲料名稱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yOT-Fy-Ni6">
+                                <rect key="frame" x="20" y="138.5" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="甜度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYt-lv-h0G">
+                                <rect key="frame" x="20" y="192.5" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="ISW-rv-Ows">
+                                <rect key="frame" x="20" y="233.5" width="374" height="32"/>
+                                <segments>
+                                    <segment title="全糖"/>
+                                    <segment title="少糖"/>
+                                    <segment title="半糖"/>
+                                    <segment title="微糖"/>
+                                    <segment title="無糖"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="冰塊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7q-fd-jhJ">
+                                <rect key="frame" x="20" y="284.5" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Xqb-qC-mZ8">
+                                <rect key="frame" x="20" y="325.5" width="374" height="32"/>
+                                <segments>
+                                    <segment title="正常冰"/>
+                                    <segment title="少冰"/>
+                                    <segment title="微冰"/>
+                                    <segment title="去冰"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="價格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXQ-TO-gKY">
+                                <rect key="frame" x="20" y="376.5" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入飲料價錢" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1C7-bL-h3H">
+                                <rect key="frame" x="20" y="417.5" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHh-28-zeq">
+                                <rect key="frame" x="363" y="471.5" width="31" height="30"/>
+                                <state key="normal" title="送出"/>
+                                <connections>
+                                    <action selector="sendBtnClick:" destination="lYa-PV-MN4" eventType="touchUpInside" id="lrQ-58-uGd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Jya-17-otF" firstAttribute="leading" secondItem="gsu-lI-JEF" secondAttribute="leading" constant="20" id="1bO-aB-FS5"/>
+                            <constraint firstItem="ISW-rv-Ows" firstAttribute="top" secondItem="lYt-lv-h0G" secondAttribute="bottom" constant="20" id="4co-UJ-Pj3"/>
+                            <constraint firstItem="ISW-rv-Ows" firstAttribute="leading" secondItem="gsu-lI-JEF" secondAttribute="leading" constant="20" id="512-r7-PRW"/>
+                            <constraint firstItem="Xqb-qC-mZ8" firstAttribute="leading" secondItem="gsu-lI-JEF" secondAttribute="leading" constant="20" id="7SB-nH-0Gv"/>
+                            <constraint firstItem="r7q-fd-jhJ" firstAttribute="top" secondItem="ISW-rv-Ows" secondAttribute="bottom" constant="20" id="839-Tt-v86"/>
+                            <constraint firstItem="gsu-lI-JEF" firstAttribute="trailing" secondItem="ISW-rv-Ows" secondAttribute="trailing" constant="20" id="C7H-g7-NGa"/>
+                            <constraint firstItem="gsu-lI-JEF" firstAttribute="trailing" secondItem="yOT-Fy-Ni6" secondAttribute="trailing" constant="20" id="CZq-yT-Ni0"/>
+                            <constraint firstItem="lYt-lv-h0G" firstAttribute="leading" secondItem="gsu-lI-JEF" secondAttribute="leading" constant="20" id="ESX-ZZ-pil"/>
+                            <constraint firstItem="yOT-Fy-Ni6" firstAttribute="top" secondItem="Jya-17-otF" secondAttribute="bottom" constant="15" id="Ehx-pU-TQ5"/>
+                            <constraint firstItem="gsu-lI-JEF" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="r7q-fd-jhJ" secondAttribute="trailing" symbolic="YES" id="GGg-bs-Kzq"/>
+                            <constraint firstItem="gsu-lI-JEF" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qXQ-TO-gKY" secondAttribute="trailing" symbolic="YES" id="Hza-jA-pt6"/>
+                            <constraint firstItem="gsu-lI-JEF" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lYt-lv-h0G" secondAttribute="trailing" symbolic="YES" id="JRE-FC-kNm"/>
+                            <constraint firstItem="gsu-lI-JEF" firstAttribute="trailing" secondItem="RHh-28-zeq" secondAttribute="trailing" constant="20" id="Msj-f9-SXm"/>
+                            <constraint firstItem="gsu-lI-JEF" firstAttribute="trailing" secondItem="Xqb-qC-mZ8" secondAttribute="trailing" constant="20" id="OQv-xF-xm5"/>
+                            <constraint firstItem="gsu-lI-JEF" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jya-17-otF" secondAttribute="trailing" symbolic="YES" id="S3n-1m-N8w"/>
+                            <constraint firstItem="gsu-lI-JEF" firstAttribute="trailing" secondItem="1C7-bL-h3H" secondAttribute="trailing" constant="20" id="Y4z-yK-mAV"/>
+                            <constraint firstItem="qXQ-TO-gKY" firstAttribute="top" secondItem="Xqb-qC-mZ8" secondAttribute="bottom" constant="20" id="acC-IE-qqr"/>
+                            <constraint firstItem="RHh-28-zeq" firstAttribute="top" secondItem="1C7-bL-h3H" secondAttribute="bottom" constant="20" id="dqW-ec-wXq"/>
+                            <constraint firstItem="Jya-17-otF" firstAttribute="top" secondItem="gsu-lI-JEF" secondAttribute="top" constant="15" id="e1G-rw-kPR"/>
+                            <constraint firstItem="yOT-Fy-Ni6" firstAttribute="leading" secondItem="gsu-lI-JEF" secondAttribute="leading" constant="20" id="jOd-Te-XmR"/>
+                            <constraint firstItem="Xqb-qC-mZ8" firstAttribute="top" secondItem="r7q-fd-jhJ" secondAttribute="bottom" constant="20" id="p9D-1y-mzd"/>
+                            <constraint firstItem="1C7-bL-h3H" firstAttribute="top" secondItem="qXQ-TO-gKY" secondAttribute="bottom" constant="20" id="pH9-p3-vsH"/>
+                            <constraint firstItem="r7q-fd-jhJ" firstAttribute="leading" secondItem="gsu-lI-JEF" secondAttribute="leading" constant="20" id="qBc-t9-srM"/>
+                            <constraint firstItem="lYt-lv-h0G" firstAttribute="top" secondItem="yOT-Fy-Ni6" secondAttribute="bottom" constant="20" id="smG-fQ-LAs"/>
+                            <constraint firstItem="RHh-28-zeq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gsu-lI-JEF" secondAttribute="leading" symbolic="YES" id="w8E-ae-cPc"/>
+                            <constraint firstItem="1C7-bL-h3H" firstAttribute="leading" secondItem="gsu-lI-JEF" secondAttribute="leading" constant="20" id="z2X-eE-B62"/>
+                            <constraint firstItem="qXQ-TO-gKY" firstAttribute="leading" secondItem="gsu-lI-JEF" secondAttribute="leading" constant="20" id="zwd-6c-GQk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gsu-lI-JEF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QQd-9I-IWX"/>
+                    <connections>
+                        <outlet property="iceSelect" destination="Xqb-qC-mZ8" id="v7L-Xh-96u"/>
+                        <outlet property="nameTextField" destination="yOT-Fy-Ni6" id="nKS-Mq-QAr"/>
+                        <outlet property="priceTextField" destination="1C7-bL-h3H" id="QeK-30-6PM"/>
+                        <outlet property="sweetSelect" destination="ISW-rv-Ows" id="wfb-zj-V8d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tmz-8v-scN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="139"/>
+        </scene>
+    </scenes>
+</document>
