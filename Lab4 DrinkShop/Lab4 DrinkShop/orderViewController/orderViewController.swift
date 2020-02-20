@@ -33,10 +33,10 @@ class orderViewController: UIViewController {
         }
     }
     
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        view.endEditing(true)
-//        super.touchesBegan(touches, with: event)
-//    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
 
     @IBAction func sendBtnClick(_ sender: Any) {
         if myDrink == nil {
