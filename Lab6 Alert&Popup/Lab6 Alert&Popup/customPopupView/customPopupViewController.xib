@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="customPopupViewController" customModule="Lab6_Alert_Popup" customModuleProvider="target">
+            <connections>
+                <outlet property="popupView" destination="5R8-2q-m2b" id="G3v-jt-kRh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5R8-2q-m2b" userLabel="Popup View">
+                    <rect key="frame" x="41.5" y="247.5" width="331" height="401"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="bkc-Oq-kZ5">
+                            <rect key="frame" x="33" y="36" width="265" height="265"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="bkc-Oq-kZ5" secondAttribute="height" id="ewD-3j-q71"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客製化 popup view" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T97-QL-lSU">
+                            <rect key="frame" x="93" y="5" width="145" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHD-Yr-4sO">
+                            <rect key="frame" x="33" y="311" width="125" height="30"/>
+                            <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="麥當勞"/>
+                            <connections>
+                                <action selector="selectFood:" destination="-1" eventType="touchUpInside" id="1Ti-al-Vnd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5q-ns-8U8">
+                            <rect key="frame" x="173" y="311" width="125" height="30"/>
+                            <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="肯德基"/>
+                            <connections>
+                                <action selector="selectFood:" destination="-1" eventType="touchUpInside" id="mFf-ga-jut"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAM-pm-089">
+                            <rect key="frame" x="33" y="351" width="125" height="30"/>
+                            <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="漢堡王"/>
+                            <connections>
+                                <action selector="selectFood:" destination="-1" eventType="touchUpInside" id="tH9-v2-F1t"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odL-1E-tlc">
+                            <rect key="frame" x="173" y="351" width="125" height="30"/>
+                            <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="摩斯"/>
+                            <connections>
+                                <action selector="selectFood:" destination="-1" eventType="touchUpInside" id="CSm-eW-Ino"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.18489617791744867" green="0.82715339467005078" blue="0.64330915396931976" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="T97-QL-lSU" firstAttribute="centerX" secondItem="5R8-2q-m2b" secondAttribute="centerX" id="4z7-cv-AxN"/>
+                        <constraint firstItem="sAM-pm-089" firstAttribute="leading" secondItem="jHD-Yr-4sO" secondAttribute="leading" id="5vs-Ry-qDy"/>
+                        <constraint firstItem="odL-1E-tlc" firstAttribute="leading" secondItem="sAM-pm-089" secondAttribute="trailing" constant="15" id="Egu-sA-eDN"/>
+                        <constraint firstItem="bkc-Oq-kZ5" firstAttribute="top" secondItem="T97-QL-lSU" secondAttribute="bottom" constant="10" id="Mb5-LA-6vh"/>
+                        <constraint firstItem="sAM-pm-089" firstAttribute="top" secondItem="jHD-Yr-4sO" secondAttribute="bottom" constant="10" id="NtV-gs-lvc"/>
+                        <constraint firstItem="u5q-ns-8U8" firstAttribute="trailing" secondItem="bkc-Oq-kZ5" secondAttribute="trailing" id="Q6Z-1N-r2J"/>
+                        <constraint firstItem="bkc-Oq-kZ5" firstAttribute="centerX" secondItem="5R8-2q-m2b" secondAttribute="centerX" id="Teh-jJ-iZL"/>
+                        <constraint firstItem="odL-1E-tlc" firstAttribute="top" secondItem="u5q-ns-8U8" secondAttribute="bottom" constant="10" id="gwI-vq-aIh"/>
+                        <constraint firstItem="jHD-Yr-4sO" firstAttribute="leading" secondItem="bkc-Oq-kZ5" secondAttribute="leading" id="gx9-FH-M2x"/>
+                        <constraint firstItem="u5q-ns-8U8" firstAttribute="leading" secondItem="jHD-Yr-4sO" secondAttribute="trailing" constant="15" id="kyw-SZ-AIS"/>
+                        <constraint firstItem="jHD-Yr-4sO" firstAttribute="top" secondItem="bkc-Oq-kZ5" secondAttribute="bottom" constant="10" id="ncO-xC-XNc"/>
+                        <constraint firstItem="sAM-pm-089" firstAttribute="trailing" secondItem="jHD-Yr-4sO" secondAttribute="trailing" id="pGm-cD-nQn"/>
+                        <constraint firstItem="odL-1E-tlc" firstAttribute="trailing" secondItem="u5q-ns-8U8" secondAttribute="trailing" id="pkF-y3-58V"/>
+                        <constraint firstItem="bkc-Oq-kZ5" firstAttribute="width" secondItem="5R8-2q-m2b" secondAttribute="width" multiplier="0.8" id="q1E-e4-G9j"/>
+                        <constraint firstItem="T97-QL-lSU" firstAttribute="top" secondItem="5R8-2q-m2b" secondAttribute="top" constant="5" id="s0y-M2-64p"/>
+                        <constraint firstItem="u5q-ns-8U8" firstAttribute="width" secondItem="jHD-Yr-4sO" secondAttribute="width" id="tFV-um-nOz"/>
+                        <constraint firstAttribute="bottom" secondItem="sAM-pm-089" secondAttribute="bottom" constant="20" id="vde-wD-EyF"/>
+                        <constraint firstItem="u5q-ns-8U8" firstAttribute="top" secondItem="bkc-Oq-kZ5" secondAttribute="bottom" constant="10" id="w7H-Ct-Eto"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="5R8-2q-m2b" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Cer-Ll-bGk"/>
+                <constraint firstItem="5R8-2q-m2b" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.8" id="Jtq-mu-Bct"/>
+                <constraint firstItem="5R8-2q-m2b" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Vxe-sw-PQN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="SMg-08-hZU" appends="YES" id="UtI-jP-HCh"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+        <tapGestureRecognizer id="SMg-08-hZU">
+            <connections>
+                <action selector="dismissView:" destination="-1" id="SUC-V3-YO5"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="6" width="370" height="320"/>
+    </resources>
+</document>
