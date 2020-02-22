@@ -42,12 +42,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="IQQ-gm-F3k" firstAttribute="leading" secondItem="BMe-DD-Pu1" secondAttribute="leading" id="BbB-UU-BHS"/>
-                            <constraint firstItem="IQQ-gm-F3k" firstAttribute="top" secondItem="BMe-DD-Pu1" secondAttribute="top" id="McF-VE-aJs"/>
-                            <constraint firstItem="BMe-DD-Pu1" firstAttribute="bottom" secondItem="IQQ-gm-F3k" secondAttribute="bottom" id="e0X-XF-E6L"/>
-                            <constraint firstItem="BMe-DD-Pu1" firstAttribute="trailing" secondItem="IQQ-gm-F3k" secondAttribute="trailing" id="mcI-mu-30h"/>
+                            <constraint firstItem="IQQ-gm-F3k" firstAttribute="leading" secondItem="XQH-iO-oak" secondAttribute="leading" id="BbB-UU-BHS"/>
+                            <constraint firstItem="IQQ-gm-F3k" firstAttribute="top" secondItem="XQH-iO-oak" secondAttribute="top" id="McF-VE-aJs"/>
+                            <constraint firstItem="XQH-iO-oak" firstAttribute="bottom" secondItem="IQQ-gm-F3k" secondAttribute="bottom" id="e0X-XF-E6L"/>
+                            <constraint firstItem="XQH-iO-oak" firstAttribute="trailing" secondItem="IQQ-gm-F3k" secondAttribute="trailing" id="mcI-mu-30h"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="BMe-DD-Pu1"/>
+                        <viewLayoutGuide key="safeArea" id="XQH-iO-oak"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="縮放功能" image="zoom" selectedImage="zoom_selected" id="9dX-4n-Awc"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -78,6 +78,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ywR-20-CDb" secondAttribute="trailing" id="arc-Ut-w9c"/>
                             <constraint firstItem="ywR-20-CDb" firstAttribute="leading" secondItem="h6T-q4-0mw" secondAttribute="leadingMargin" id="rzy-LS-0RY"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Usz-gJ-S9g"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewc-n1-k9M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
