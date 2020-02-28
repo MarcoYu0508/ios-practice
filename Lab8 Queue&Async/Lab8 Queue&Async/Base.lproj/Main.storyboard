@@ -99,7 +99,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3cF-hZ-Tbo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="矩陣運算" id="EMD-L6-Hnl"/>
+                    <tabBarItem key="tabBarItem" title="矩陣運算" image="tray" catalog="system" selectedImage="tray.fill" id="EMD-L6-Hnl"/>
                     <connections>
                         <outlet property="matrix1Label" destination="lLe-a3-ZSc" id="CWJ-N8-tj8"/>
                         <outlet property="matrix2Label" destination="O9d-yd-flM" id="2o3-dM-tZI"/>
@@ -178,7 +178,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qV8-it-a4W"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="龜兔賽跑" id="Zj4-7b-GIm"/>
+                    <tabBarItem key="tabBarItem" title="龜兔賽跑" image="doc" catalog="system" selectedImage="doc.fill" id="Zj4-7b-GIm"/>
                     <connections>
                         <outlet property="rabbitProgress" destination="R61-Tj-Iwn" id="Ig9-Oh-3LY"/>
                         <outlet property="turtleProgress" destination="pEF-oD-grg" id="rko-2V-DPy"/>
@@ -207,4 +207,10 @@
             <point key="canvasLocation" x="-470" y="116"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="doc" catalog="system" width="56" height="64"/>
+        <image name="doc.fill" catalog="system" width="56" height="64"/>
+        <image name="tray" catalog="system" width="64" height="44"/>
+        <image name="tray.fill" catalog="system" width="64" height="44"/>
+    </resources>
 </document>

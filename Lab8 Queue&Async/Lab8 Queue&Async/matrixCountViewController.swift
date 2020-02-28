@@ -52,7 +52,7 @@ class matrixCountViewController: UIViewController {
                 for _ in 0...9{
                     let element = Int.random(in: 1...9)
                     self.matrix1[row].append(element)
-                    usleep(50000)
+//                    usleep(50000)
                     self.showMatrix(index: 1, data: element)
                 }
                 self.showMatrix(index: 1)
@@ -63,7 +63,7 @@ class matrixCountViewController: UIViewController {
                 for _ in 0...9{
                     let element = Int.random(in: 1...9)
                     self.matrix2[row].append(element)
-                    usleep(80000)
+//                    usleep(80000)
                     self.showMatrix(index: 2, data: element)
                 }
                 self.showMatrix(index: 2)
@@ -96,7 +96,7 @@ class matrixCountViewController: UIViewController {
                     let dotValue = self.doDot(vector1: matrix1Row, vector2: matrix2Col)
                     self.matrixResult[row].append(dotValue)
                     self.showMatrix(index: 3, data: dotValue)
-                    usleep(50000)
+//                    usleep(50000)
                 }
                 self.showMatrix(index: 3)
             }
