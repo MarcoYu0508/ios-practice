@@ -7,32 +7,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "57E47B28-89CD-41E1-91B7-FD4A1A1DA513"
+            uuid = "F736134A-0D38-45FA-B710-2FFCFDECABDA"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Lab9 NSNotification/secondViewController.swift"
+            filePath = "Lab9 NSNotification/thirdViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "regionNotificationSend(_:)"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "initNotification()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DE1524FE-8FD4-4C70-89C0-62EFC93353E5"
+            uuid = "3174063C-DE42-4462-9436-32BC60E00420"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab9 NSNotification/thirdViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "initNotification()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D46FC03C-851A-41DF-97F4-A8136F970168"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lab9 NSNotification/secondViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "getSendData()"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "initNotification()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

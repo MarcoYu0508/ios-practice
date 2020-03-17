@@ -18,7 +18,7 @@ class firstViewController: UIViewController {
     var publicNotification : NSObjectProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("firstView")
         registerBtn.setTitle("通知已關閉", for: .normal)
         registerBtn.setTitle("通知已開啟", for: .selected)
         startTimeBtn.setTitle("已停止計時", for: .normal)
@@ -27,7 +27,7 @@ class firstViewController: UIViewController {
     
     
     @IBAction func registerPublicNotification(_ btn: UIButton) {
-        let name = NSNotification.Name(rawValue: "public")
+        let name = NSNotification.Name("public")
         if !btn.isSelected {
             publicNotification = NotificationCenter.default.addObserver(forName: name, object: nil, queue: OperationQueue.main) {
                 (notification) in

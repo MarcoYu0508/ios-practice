@@ -18,7 +18,7 @@ class thirdViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("thirdView")
         initNotification()
     }
     

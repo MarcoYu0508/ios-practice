@@ -22,7 +22,7 @@ class secondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("secondView")
         initNotification()
         keyBoardBtn.setTitle("已關閉系統鍵盤通知", for: .normal)
         keyBoardBtn.setTitle("已開啟系統鍵盤通知", for: .selected)

@@ -10,5 +10,13 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "closure #2 in thirdViewController.initNotification():thirdViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "regionNotification">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>
